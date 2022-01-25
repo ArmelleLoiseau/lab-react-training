@@ -1,5 +1,7 @@
 import React from 'react';
 
+// to do : function to display height properly + some css
+
 function IdCard(props) {
   let date = props.birth.toDateString();
   return (

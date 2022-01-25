@@ -2,6 +2,8 @@ import React from 'react';
 import rgbToHex from '../helpers/rgbToHex';
 import getContrast from '../helpers/getContrast';
 
+// to-do : add some styling
+
 function BoxColor(props) {
   const { r, g, b } = props;
 
