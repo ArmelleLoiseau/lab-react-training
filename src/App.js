@@ -9,6 +9,11 @@ import DriverCard from './components/DriverCard';
 import './styles/App.css';
 import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
+import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
+import Facebook from './components/Facebook';
+import FacebookAdvanced from './components/FacebookAdvanced';
 
 function App() {
   return (
@@ -115,8 +120,33 @@ function App() {
       <LikeButton />
       <LikeButton />
       <hr />
-      <h2>Iteration 8 | State: LikeButton</h2>
-      <ClickablePicture image="/maxence.png" imgClicked="/maxence-glasses.png"/>
+      <h2>Iteration 9: State: ClickablePicture</h2>
+      <ClickablePicture
+        image="/maxence.png"
+        imgClicked="/maxence-glasses.png"
+      />
+      <hr />
+      <h2>Iteration 10 | State: Dice</h2>
+      <Dice />
+      <hr />
+      <h2>Iteration 11 | State: Carousel</h2>
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
+      />
+      <hr />
+      <h2>Iteration 12 | List and Keys | NumbersTable</h2>
+      <NumbersTable limit={12} />
+      <hr />
+      <h2>Iteration 13 | List and Keys - FaceBook (Simple)</h2>
+      <Facebook />
+      <hr />
+      <h2>Iteration 14 | List and Keys - FaceBook (Advanced)</h2>
+      <FacebookAdvanced />
     </div>
   );
 }

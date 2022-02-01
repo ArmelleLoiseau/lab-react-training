@@ -1,14 +1,17 @@
-import React, { useState } from "react"
+import React, { useState } from 'react';
 
-function ClickablePicture({ image, imgClicked}) {
-    console.log(image)
-    console.log(imgClicked)
+function ClickablePicture({ image, imgClicked }) {
+  const [pic, setPic] = useState(image);
 
-    return (
-        <div>
-        <img src={image} alt="Maxence" />
-        </div>
-    )
+  const changeImage = () => {
+    pic === image ? setPic(imgClicked) : setPic(image);
+  };
+
+  return (
+    <div>
+      <img onClick={changeImage} src={pic} alt="Maxence" />
+    </div>
+  );
 }
 
-export default ClickablePicture
+export default ClickablePicture;
